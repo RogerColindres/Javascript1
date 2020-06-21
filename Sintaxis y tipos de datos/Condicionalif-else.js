@@ -63,3 +63,34 @@ if (word.length > 4) {
 }
 
 //ejercicio ordenar 3 numeros
+
+const numeros = document.getElementById("numeros");
+const resultado = document.getElementById("resultado");
+
+let a = prompt("Introdusca el primer numero");
+let b = prompt("Introdusca el segundo numero");
+let c = prompt("Introdusca el tercer numero");
+
+numeros.textContent = `Los numeros introducidos son ${a}, ${b}, ${c}`;
+
+/*desarrollo del ejercicio*/
+
+if (a >= b && a >= c) {
+    if (b > c) {
+        resultado.textContent = `El orden es ${a}, ${b}, ${c}`;
+    } else {
+        resultado.textContent = `El orden es ${a}, ${c}, ${b}`;
+    }
+} else if (b >= a && b >= c) {
+    if (a > c) {
+        resultado.textContent = `El orden es ${b}, ${a}, ${c}`;
+    } else {
+        resultado.textContent = `El orden es ${b}, ${c}, ${a}`;
+    }
+} else if (c >= a && c >= b) {
+    if (a > b) {
+        resultado.textContent = `El orden es ${c}, ${a}, ${b}`;
+    } else {
+        resultado.textContent = `El orden es ${c}, ${b}, ${a}`;
+    }
+}
