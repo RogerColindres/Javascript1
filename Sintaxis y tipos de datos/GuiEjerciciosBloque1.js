@@ -68,7 +68,25 @@ for (let i = 1; i <= numero; i++) {
     }
 } */
 
-//4 dudas 
+//4 
+
+/* let numero = parseInt(prompt('Introduce un numero'));
+let divisores = 0;
+
+if (numero === 1) {
+    console.log('El numero 1 no es valido, no es primo');
+} else {
+    for (let i = 2; i < numero; i++) {
+        if (numero % i == 0) {
+            console.log(`${numero} / ${i} = ${numero/i} no es primo`);
+            divisores++;
+            break;
+        }
+    }
+
+}
+
+if (divisores == 0) console.log(`${numero} es primo`); */
 
 //5 
 
@@ -122,6 +140,17 @@ console.log(impares); */
 
 //8 dudas 
 
+/* const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D',
+    'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'
+]
+
+const dni = prompt('Introduce tu DNI')
+
+if (dni.length == 8 && parseInt(dni) > 0) {
+    console.log(`Tu DNI completo es ${dni}${letras[dni%23]}`)
+}
+ */
+
 //9 
 /* let palabras = prompt('introduca una palabra');
 let consonantes = 0;
@@ -140,11 +169,11 @@ console.log(`el numero de vales son: ${vocales}`);
 console.log(`el numero de consonantes son: ${consonantes}`); */
 
 //10 
-let colores = ["azul", "amarillo", "rojo", "verde", "rosa"];
+/* let colores = ["azul", "amarillo", "rojo", "verde", "rosa"];
 let busqueda = prompt('introdusca el color que desea buscar');
 
 if (colores.indexOf(busqueda) == 0) {
     console.log('El color buscado existe dentro del arreglo');
 } else {
     console.log('El color buscado no existe dentro del arreglo');
-}
+} */
