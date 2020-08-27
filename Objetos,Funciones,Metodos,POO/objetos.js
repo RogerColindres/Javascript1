@@ -48,3 +48,11 @@ roger.saludar();
 roger.decirMiNombre();
 
 console.log(Object.keys(roger))
+
+/*importante:
+cuando usamos == estamos comparando los valores 
+mientras que === compara tipo de dato y valor de dato*/
+// el uso de === es la practica correcta para na compracion de igualdad estricta
+
+let i = 2
+console.log(i++)
