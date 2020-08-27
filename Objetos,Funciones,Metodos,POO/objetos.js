@@ -21,5 +21,30 @@ for (let llave in persona) {     recorremos el objeto, un for of toma el objeto 
 /* for (let hijo of persona.hijos) {
     console.log(hijo)
 } */
+/*detro de un objeto a las variables se les van a llamar 
+atributos/propiedades y a las funciones se les llama metodos*/
+const roger = {
+    nombre: "Roger",
+    apellido: "Colindres",
+    edad: "29",
+    pasatiempos: ["Estudiar, Deporte, Dar clases"],
+    estadocivil: "soltero",
+    contacto: {
+        email: "jeovannyr10@gmail.com",
+        telefono: "+50495642673"
+    },
+    saludar: function() {
+        console.log("Hola :)")
+    },
+    decirMiNombre: function() {
+        console.log(`Hola me llamo ${this.nombre} ${this.apellido}`)
+    }
+}
 
-console.log(`Hola ${persona.nombre}. tienes ${persona.edad} años y tus hijos se llaman ${persona.hijos.join(', ')}`)
+console.log(roger);
+console.log(roger.nombre);
+console.log(roger.apellido);
+roger.saludar();
+roger.decirMiNombre();
+
+console.log(Object.keys(roger))

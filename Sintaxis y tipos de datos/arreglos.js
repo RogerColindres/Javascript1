@@ -26,13 +26,13 @@ let palabra = "hola";
 
 /*.length - devuelve el numero de pocisiones que contiene el array*/
 
-console.log(numeros.length)
+// console.log(numeros.length)
 
 /*metodos para arreglos*/
 /*Array.isArray() -devuelve true si la variable es un array.*/
 
-console.log(Array.isArray(numeros));
-console.log(Array.isArray(palabra));
+// console.log(Array.isArray(numeros));
+// console.log(Array.isArray(palabra));
 
 /*elimienar elemetos de un arreglo*/
 /*Eliminar un elemento*/
@@ -56,14 +56,14 @@ console.log(numeros); */
 /*indexOf devuelve el primer indice del elemento que coincida con el valor especificado, o -1
 si ninguno es encontrado*/
 
-console.log(numeros.indexOf(2));
+// console.log(numeros.indexOf(2));
 
 /*.lastIndexOf() devuelve el ultimo indice del elemento que coincida con el valor especificado, o -1 
 si ninguno es encontrado*/
 
 let numeros1 = [1, 2, 3, 2, 4, 5, 6, 2, 7];
 
-console.log(numeros1.lastIndexOf(2));
+// console.log(numeros1.lastIndexOf(2));
 
 /*.reverse() invierte el orden de los elementos del arreglo*/
 
@@ -74,7 +74,7 @@ console.log(numeros); */
 
 let nombre = ['Roger', 'Colindres'];
 let separador = nombre.join(' ');
-console.log(separador);
+// console.log(separador);
 
 /*.splice(a,b,items) cambia el contenido de un arreglo eliminando elementos existentes y/o 
 agregando nuevos elementos
@@ -92,7 +92,28 @@ items - elemento a añadir en el caso de que se añadan (opcional)*/
 si no existe b lo hace hasta el final del arreglo, si o existe ni a ni b hace una copia del arreglo*/
 
 let newNumbers = numeros.slice();
-console.log(numeros);
-console.log(newNumbers);
+// console.log(numeros);
+// console.log(newNumbers);
 let newNumbers2 = numeros.slice(2, 3);
-console.log(newNumbers2);
+// console.log(newNumbers2);
+
+//arreglos con mircha
+let a = []
+let b = [1, true, "hola", [1, 2, 3]]
+console.log(a)
+console.log(b)
+console.log(b.length)
+console.log(b[2])
+console.log(b[3][2])
+
+/*otra de forma de declarar un arreglo*/
+let c = Array.of(1, 2, 3, 4, 5)
+console.log(c)
+
+let d = Array(100).fill(false);
+console.log(d)
+
+let colores = ["rojo", "verde", "azul"]
+colores.forEach(function(el, index) {
+    console.log(`<li id="${index}">${el}</li>`)
+})
