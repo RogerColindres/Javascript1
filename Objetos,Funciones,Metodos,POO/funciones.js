@@ -41,3 +41,21 @@ const suma2 = function suma2(a, b) {
 }
 
 console.log(suma2(1, 1));
+
+
+/*funciones flecha o arrow functions*/
+//funciones expresadas 
+//funciones declradas 
+
+const saludar = () => console.log("hola");
+
+saludar();
+
+/*ejemplo de aplicacion funcion flecha*/
+
+let numeros10 = [1, 2, 3, 4, 5]
+numeros10.forEach((el, index) => {
+    console.log(`El elemento ${el} esta en la posicion ${index}`)
+})
+
+/*tienen la capacidad de capturar el this del contexto donde se encuentran*/

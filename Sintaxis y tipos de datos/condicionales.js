@@ -43,3 +43,45 @@ switch (dia) {
         console.log("El dia no exixte")
         break;
 }
+
+/*break y continue*/
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+for (let i = 0; i < numeros.length; i++) {
+    if (i === 5) {
+        break;
+    }
+    console.log(numeros[i])
+}
+
+for (let i = 0; i < numeros.length; i++) {
+    if (i === 5) {
+        continue;
+    }
+    console.log(numeros[i])
+}
+
+/*destructuracion*/
+let numeros2 = [1, 2, 3]
+const [uno, dos, tres] = numeros2;
+console.log(uno, dos, tres);
+
+/*objetos literales*/
+/*nueva forma de escribit atrbutos y metodos*/
+let nombre = "Flin",
+    años = 2;
+
+const gato = {
+    nombre: nombre,
+    edad: años,
+    mauyar: function() {
+        console.log("miauuuu");
+    }
+}
+
+const cat = {
+    nombre,
+    años
+};
+
+console.log(cat);
