@@ -28,7 +28,8 @@ console.log(cadena.replace("mundo", "Curso de Javascript"));
 
 console.log(cadena.substring(3, 7));
 
-//slice(inicio, [fin]) igual que sbstring pero admite valores negativos, si ponemos valores negativos empezara desde atras
+//slice(inicio, [fin]) igual que sbstring pero admite valores negativos, si ponemos valores negativos
+//empezara desde atras
 
 console.log(cadena.slice(-3));
 
