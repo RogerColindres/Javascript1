@@ -38,4 +38,10 @@ let expReg2 = /^[a-zA-Z0-9.-_]+\@[a-zA-Z]+\.[a-z]+$/gim;
 /* console.log(expReg1.test(cadena));
 console.log(expReg1.exec(cadena)); */
 console.log(expReg2.test(cadena));
-console.log(expReg2.exec(cadena));
+/* console.log(expReg2.exec(cadena)); */
+
+let cadena2 = "holaxyz123"
+
+let ExpreR = /xyz/gim
+
+console.log(ExpreR.test(cadena2))

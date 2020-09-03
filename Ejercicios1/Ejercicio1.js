@@ -54,9 +54,8 @@ const ejercicio4 = (cadena, contador) => {
     } else if (typeof contador != "number") {
         console.log("El parametro de tamaño no es un numero")
     } else {
-        for (let i = 0; i < contador; i++) {
-            console.log(cadena);
-        }
+        cadena = cadena + " ";
+        console.log(cadena.repeat(contador));
     }
 }
 
